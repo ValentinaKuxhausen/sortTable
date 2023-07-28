@@ -1,0 +1,18 @@
+<table>
+  <!--Table Head Titel-->
+  <thead>
+    <tr>
+      <th>Zipcode</th>
+      <th>City</th>
+      <th>Street</th>
+    </tr>
+  </thead>
+  <!--Table Body jeweilige Adressen in Rows/Zeilen-->
+  <tbody>
+    <tr *ngFor="let address of addresses">
+      <td>{{ address.postcode }}</td>
+      <td>{{ address.city }}</td>
+      <td>{{ address.street }}</td>
+    </tr>
+  </tbody>
+</table>
